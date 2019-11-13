@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     @NonNull
     private SimpleAdapter createAdapter(List<Map<String, String>>  content) {
-        return new SimpleAdapter(this, content, android.R.layout.simple_list_item_1, new String[]{"text","length"}, new int[]{R.id.textView, R.id.textView2});
+        return new SimpleAdapter(this, content, R.layout.constraintlayout, new String[]{"text","length"}, new int[]{R.id.textView, R.id.textView2});
     }
 
     @NonNull
